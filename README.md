@@ -1,2 +1,3 @@
-# PtrC7.github.io
-My Personal Gitbub site
+# My Personal Site
+https://PtrC7.github.io
+This is a WIP
