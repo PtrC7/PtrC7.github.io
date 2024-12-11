@@ -76,6 +76,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1.9rem;
+  align-items: center;
 }
 
 .burger-menu {
@@ -126,14 +127,15 @@ nav ul {
 
 /* Skills */
 .skills {
-  max-width: 68.75rem;
+  max-width: 56rem;
   background-color: var(--bg-color);
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
 }
 
-.skill-header {
+.skills-header {
+  text-align: center;
   margin-bottom: 1rem;
 }
 
@@ -142,8 +144,8 @@ nav ul {
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 10.875rem;
+  height: 10.25rem;
 }
 
 /* PROJECTS */
@@ -154,12 +156,15 @@ nav ul {
 }
 
 .project-pic {
-  width: 20rem;
-  height: 12rem;
+  width: 21rem;
+  height: 13rem;
+  margin: 0 auto;
+  display: block;
 }
 
 .projects-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -171,8 +176,27 @@ nav ul {
 
 .project-container {
   text-align: center;
-  width: 21.875rem;
-  padding: 1rem;
+  width: 25rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-container:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.project-separator {
+  width: 80%; 
+  height: 2px; 
+  background-color: #ddd; 
+  margin: 0.5rem auto; 
+  border: none; 
 }
 
 /* CONTACT */
@@ -189,8 +213,9 @@ nav ul {
   max-width: 40.75rem;
   margin: 0 auto;
   padding: 0.938rem;
-  border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form-container label {
