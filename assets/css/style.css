@@ -88,6 +88,10 @@ nav ul {
   display: none;
 }
 
+.burger-menu.active {
+  transform: rotate(90deg); /* Rotate 90 degrees on click */
+}
+
 /* About */
 .about {
   background-image: url(/assets/images/bg-image.jpg);
@@ -325,7 +329,12 @@ footer {
   }
 
   .project-container {
-    width: 20.875rem;
+    width: 23rem;
+  }
+  
+  .project-pic {
+    width: 19rem;
+    height: 13rem;
   }
 
   .contact-form-container {
@@ -335,7 +344,7 @@ footer {
 
 @media screen and (max-width: 420px) {
   .about img {
-    height: 37.5rem;
+    height: 27.5rem;
     width: 23rem;
   }
 
@@ -344,10 +353,15 @@ footer {
   }
 
   .project-container {
-    width: 17.875rem;
+    width: 22rem;
+  }
+
+  .project-pic {
+    width: 18rem;
+    height: 12rem;
   }
 
   .contact-form-container {
-    max-width: 17.75rem;
+    max-width: 22rem;
   }
 }
