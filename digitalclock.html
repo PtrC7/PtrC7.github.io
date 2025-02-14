@@ -37,14 +37,28 @@
     <section class="project-detail">
       <div class="project-content">
         <div class="project-image">
-          <img src="assets/images/digitalclock.gif" alt="Project Name" loading="lazy" />
+          <img src="assets/images/digital-clock-1.gif" alt="Project Name" loading="lazy" />
+          <img src="assets/images/digital-clock-2.png" alt="Project Name" loading="lazy" />
+          <img src="assets/images/digital-clock-3.png" alt="Project Name" loading="lazy" />
         </div>
         <div class="project-text">
           <h2>Digital Clock</h2>
           <p>
-            Final Lab for my EE Lab 1 class. Here I created a 24 hour
-            digital clock on a breadboard using various integrated circuits and
+            Final Lab for my EE Lab 1 class. Here I designed and implemented a 24 hour
+            digital clock on a breadboard using various integrated circuits, seven-segment displays, and
             logic gates.
+          </p>
+          <p>
+            <b>Components:</b>
+            <li>BCD counters to track hours, minutes, and seconds.</li>
+            <li>BCD to seven-segment drivers to display numerical values</li>
+          </p>
+          <p>
+            <b>Features</b>
+            <li>Using the seven-segment displays, this project displays hours (0-23), minutes (0-59), and seconds (0-59)</li>
+            <li>By utilizing ripple cascading we ensure the automatic transitions between seconds, minutes, and hours</li>
+            <li>A function generator simulated the real-time clock behavior for testing. </li>
+            <li>By analyzing the clock's power consuption, we were able to estimate that the clock would run for 5 hours on a 9V battery.</li>
           </p>
           <a href="index.html#projects" class="btn">Back</a>
         </div>
@@ -55,6 +69,9 @@
     <footer>
       <p>&copy; 2025, Peter Chaya</p>
     </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
 
     <!-- Ion icons scripts -->
     <script
