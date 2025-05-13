@@ -381,7 +381,7 @@ footer {
 .project-content {
   display: flex;
   flex-direction: row; /* Ensure images and text are side by side */
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 2rem;
 }
