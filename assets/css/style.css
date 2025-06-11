@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Roboto", sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -20,7 +20,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* CSS Resets */
 * {
   margin: 0;
   padding: 0;
@@ -44,55 +43,24 @@ body {
   font-family: var(--font-family);
 }
 
-/* Navbar */
-nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
-
+.navbar {
   box-shadow: 0 3px 5px var(--primary-shadow);
 }
 
-nav h1 {
+.navbar-brand {
   color: var(--primary-color);
+  font-weight: var(--bold-font);
 }
 
-nav a {
+.navbar-nav .nav-link {
   color: var(--primary-color);
   transition: var(--transition);
 }
 
-nav a:hover {
+.navbar-nav .nav-link:hover {
   color: var(--secondary-color);
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.9rem;
-  align-items: center;
-}
-
-.burger-menu {
-  color: var(--primary-color);
-  font-size: 2rem;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  display: none;
-}
-
-.burger-menu.active {
-  transform: rotate(90deg); /* Rotate 90 degrees on click */
-}
-
-/* About */
 .about {
   background-image: url(/assets/images/bg-image.jpg);
   background-position: center;
@@ -114,7 +82,6 @@ nav ul {
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
-  /* background-color: var(--bg-color); */
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
   text-align: center;
   color: white;
@@ -129,7 +96,6 @@ nav ul {
   padding: 0.3rem 0;
 }
 
-/* Skills */
 .skills {
   max-width: 56rem;
   background-color: var(--bg-color);
@@ -152,7 +118,6 @@ nav ul {
   height: 10.25rem;
 }
 
-/* PROJECTS */
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
@@ -191,20 +156,19 @@ nav ul {
 }
 
 .project-container:hover {
-  transform: scale(1.03); 
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+  transform: scale(1.03);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .project-separator {
-  width: 80%; 
-  height: 2px; 
-  background-color: #ddd; 
-  margin: 0.5rem auto; 
-  border: none; 
+  width: 80%;
+  height: 2px;
+  background-color: #ddd;
+  margin: 0.5rem auto;
+  border: none;
 }
 
 .project-details {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   background-color: var(--bg-color);
@@ -224,7 +188,6 @@ nav ul {
   transition: var(--transition);
 }
 
-/* CONTACT */
 .contact {
   margin-top: 2rem;
 }
@@ -256,17 +219,14 @@ nav ul {
 
 .contact-form-container .input-field {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   border-radius: 5px;
-  border: none;
   border: 2px outset var(--primary-color);
   font-size: 0.875rem;
   outline: none;
 }
 
 .input-field::placeholder {
-  padding: 0.5rem;
   color: var(--primary-color);
 }
 
@@ -284,22 +244,16 @@ nav ul {
 
 .submit-btn:hover {
   background-color: var(--primary-color);
-  border: 2px solid var(--primary-color);
   cursor: pointer;
 }
 
-/* Footer */
 footer {
   background-color: var(--bg-color);
   text-align: center;
   margin: 2rem 0 0;
 }
 
-/* MEDIA QUERIES */
 @media screen and (max-width: 720px) {
-  nav {
-    padding: 1.5rem 1rem;
-  }
   nav ul {
     position: fixed;
     background-color: var(--bg-color);
@@ -310,14 +264,6 @@ footer {
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
-  }
-
-  nav ul li {
-    margin: 8px;
-  }
-
-  .burger-menu {
-    display: block;
   }
 
   nav ul.show {
@@ -352,7 +298,7 @@ footer {
   .project-container {
     width: 23rem;
   }
-  
+
   .project-pic {
     width: 19rem;
     height: 13rem;
@@ -387,30 +333,28 @@ footer {
   }
 }
 
-/* Project Pages */
-
 .project-content {
   margin-top: 4rem;
   display: flex;
-  flex-direction: row; /* Ensure images and text are side by side */
+  flex-direction: row;
   align-items: flex-start;
   justify-content: center;
   gap: 2rem;
 }
 
 .project-image {
-  order: 1; /* Ensure images are on the left */
-  width: 40rem; /* Adjust the width as needed */
+  order: 1;
+  width: 40rem;
   height: auto;
 }
 
 .project-image img {
-  width: 100%; /* Ensure the image takes up the full width of the container */
-  height: auto; /* Maintain the aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
 .project-text {
-  order: 2; /* Ensure text is on the right */
+  order: 2;
   max-width: 650px;
   color: var(--primary-color);
 }
@@ -443,9 +387,11 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+
   .project-image {
-    width: 100%; /* Ensure the image takes up the full width on smaller screens */
+    width: 100%;
   }
+
   .project-image img {
     max-width: 100%;
   }
