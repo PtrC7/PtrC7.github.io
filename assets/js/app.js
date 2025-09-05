@@ -40,7 +40,7 @@ const projects = [
   {
     id: "chatlingo",
     title: "ChatLingo",
-    image: "assets/images/chatlingo.png",
+    image: "assets/images/chatlingo-1.png",
     description: "React Native, Pytorch, Flask",
     links: [
       { text: "GitHub", url: "https://github.com/arafi6624/ChatLingo" },
@@ -49,7 +49,7 @@ const projects = [
   {
     id: "stockmarket",
     title: "Stock Market Forecasting",
-    image: "assets/images/stock-market.png",
+    image: "assets/images/stock-market-1.png",
     description: "Pytorch, Recurrent Neural Networks",
     links: [
       { text: "GitHub", url: "https://github.com/PtrC7/stock_market_forecasting", },
@@ -58,7 +58,7 @@ const projects = [
   {
     id: "stringmatcher",
     title: "Exact String Matcher",
-    image: "assets/images/stringmatcher.png",
+    image: "assets/images/string-matcher-1.png",
     description: "React, JavaScript",
     links: [
       { text: "Demo", url: "https://ccnyalgo.github.io/string-matcher/" },
@@ -68,7 +68,7 @@ const projects = [
   {
     id: "2fastthumbs",
     title: "2FastThumbs",
-    image: "assets/images/2fastthumbs.png",
+    image: "assets/images/2fastthumbs-1.png",
     description: "Android, Java, Kotlin",
     links: [
       { text: "GitHub", url: "https://github.com/2FastThumbs/2FastThumbs" },
@@ -77,7 +77,7 @@ const projects = [
   {
     id: "shiftregister",
     title: "CMOS Shift Register",
-    image: "assets/images/shift-register.png",
+    image: "assets/images/shift-register-1.png",
     description:
       "Electric, LTSPICE, IRSIM, Pathwave ADS",
     links: [],
@@ -85,7 +85,7 @@ const projects = [
   {
     id: "addersubtractor",
     title: "Adder Subtractor FPGA Circuit",
-    image: "assets/images/adder-subtractor.png",
+    image: "assets/images/adder-subtractor-1.png",
     description: "Intel API, Quartus, MATLAB",
     links: [],
   },

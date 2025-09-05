@@ -11,21 +11,32 @@ const projects = [
     {
       id: "chatlingo",
       title: "ChatLingo",
-      images: ["assets/images/chatlingo.png"],
+      images: [
+        "assets/images/chatlingo-1.png",
+        "assets/images/chatlingo-2.png"
+      ],
       description: `
-        Capstone Project where we developed a real-time translation chat application using React Native, Pytorch, and Flask frameworks to ensure seamless integrations.
+        ChatLingo is a real-time translation chat application designed to bridge linguistic gaps and facilitate seamless communication across languages. 
+        Built for mobile platforms (iOS and Android), our app empowers users to engage in meaningful conversations, regardless of their native language.
       `,
       components: `
         <ul>
           <li>React Native</li>
           <li>Pytorch</li>
           <li>Flask</li>
+          <li>Firebase</li>
+          <li>MarianMT</li>
         </ul>
       `,
       features: `
         <ul>
-          <li>Real-time translation</li>
-          <li>Cross-platform compatibility</li>
+          <li>Real-time translation using MarianMT deep learning model</li>
+          <li>Automatic langauge detection and switching</li>
+          <li>Cross-platform Chat interface using react native</li>
+          <li>Secure and Fast Communication using Firebase backend</li>
+          <li>Flask API integration for translation model access</li>
+          <li>User Authentication and Cloud Storage</li>
+          <li>Clean and Responive UI</li>
         </ul>
       `,
       links: [
@@ -35,9 +46,9 @@ const projects = [
     {
       id: "stockmarket",
       title: "Stock Market Forecasting",
-      images: ["assets/images/stock-market.png"],
+      images: ["assets/images/stock-market-1.png"],
       description: `
-        A machine learning project using recurrent neural networks to predict stock market trends.
+        A machine learning project using recurrent neural networks to predict stock market trends. Compared the predictions of two models to see which would be better in this use case.
       `,
       components: `
         <ul>
@@ -50,13 +61,14 @@ const projects = [
         <ul>
           <li>Accurate predictions based on historical data</li>
           <li>Visualization of stock trends</li>
+          <li>Used and compared Long Short-Term Memory and Gated Recurrent Unit models for my predictions</li>
         </ul>
       `,
     },
     {
       id: "stringmatcher",
       title: "Exact String Matcher",
-      images: ["assets/images/stringmatcher.png"],
+      images: ["assets/images/string-matcher-1.png"],
       description: `
         Final project for my algorithm class. Used React to create a website implementing different string matching algorithms to see which is more efficient.
       `,
@@ -68,8 +80,9 @@ const projects = [
       `,
       features: `
         <ul>
-          <li>Demo available online</li>
-          <li>GitHub repository for source code</li>
+          <li>Built using react to demo the algorithms</li>
+          <li>Compared Naive, Rabin-Karp, and Finite Automation string matching algorithms</li>
+          <li>Highlighted the pattern and showed the indices they were found at</li>
         </ul>
       `,
       links: [
@@ -80,9 +93,10 @@ const projects = [
     {
       id: "2fastthumbs",
       title: "2FastThumbs",
-      images: ["assets/images/2fastthumbs.png"],
+      images: ["assets/images/2fastthumbs-1.png"],
       description: `
-        Final project for my software design laboratory class. I worked with 2 other classmates to create an Android texting speed test app.
+        Final project for my software design laboratory class. I worked with 2 other classmates to create an Android texting speed test app. Created algorithms to calculate the words per minute
+        and accuracy of the text.
       `,
       components: `
         <ul>
@@ -94,7 +108,9 @@ const projects = [
       features: `
         <ul>
           <li>Fun and interactive texting speed test</li>
-          <li>Available on GitHub</li>
+          <li>Showed Words per minute based on the amount of characters typed</li>
+          <li>Showed your accuracy of how close your text was to the given one</li>
+          <li>Didn't let you continue if your text doesn't match</li>
         </ul>
       `,
       links: [
@@ -104,9 +120,17 @@ const projects = [
     {
       id: "shiftregister",
       title: "CMOS Shift Register",
-      images: ["assets/images/shift-register.png"],
+      images: [
+        "assets/images/shift-register-1.png",
+        "assets/images/shift-register-2.png",
+        "assets/images/shift-register-3.png",
+        "assets/images/shift-register-4.png",
+        "assets/images/shift-register-5.png"
+
+      ],
       description: `
-        Final Lab for my Digital Integrated Circuits class where I designed and simulated a layout and schematic for a CMOS 4-Bit Shift Register using various CAD tools such as Electric, LTSPICE, IRSIM, and Pathwave ADS.
+        Final Lab for my Digital Integrated Circuits class where I designed and simulated a layout and schematic for a CMOS 4-Bit Shift Register using D flip-flops implemented with transmission
+        gates. Verified performance through schematic and layout design, extracting parasitics, and analyzing delays, power dissipation, and chip area across multiple CAD tools
       `,
       components: `
         <ul>
@@ -118,29 +142,42 @@ const projects = [
       `,
       features: `
         <ul>
-          <li>Accurate simulation of CMOS circuits</li>
-          <li>CAD tools for layout and schematic design</li>
+          <li>Transmission-gate based D flip-flops in master-slave configuration</li>
+          <li>Complete 4-bit shift register schematic and layout with DRC checks</li>
+          <li>LTSpice and IRSIM simulations for functional verification</li>
+          <li>Performance comparison of schematic vs layout (delays, rise/fall times, power)</li>
         </ul>
       `,
     },
     {
       id: "addersubtractor",
       title: "Adder/Subtractor FPGA Circuit",
-      images: ["assets/images/adder-subtractor.png"],
+      images: [
+        "assets/images/adder-subtractor-1.png",
+        "assets/images/adder-subtractor-2.png",
+        "assets/images/adder-subtractor-3.png",
+        "assets/images/adder-subtractor-4.png",
+        "assets/images/adder-subtractor-5.png"
+      ],
       description: `
-        Final Lab for my Computer Organization Class where I utilized LPM modules to design and simulate digital computational circuits on a virtual FPGA board based on Intel API.
+        Final Lab for my Computer Organization Class where I designed and simulated a digital computational circuit using LPM modules. The design included a 32-bit SRAM and an
+        adder/subtractor circuit, tested through ModelSim to demonstrate addition, subtraction, cumulative operations, and overflow detection.
       `,
       components: `
         <ul>
           <li>Intel API</li>
           <li>Quartus</li>
+          <li>ModelSim</li>
           <li>MATLAB</li>
         </ul>
       `,
       features: `
         <ul>
-          <li>Efficient FPGA design</li>
-          <li>Simulation of computational circuits</li>
+          <li>32-bit single-port SRAM with initialization file</li>
+          <li>Adder/Subtractor with overflow detection</li>
+          <li>Demultiplexer and 2-tooooo-1 Multiplexer integration</li>
+          <li>Cumulative addition and subtraction support</li>
+          <li>Testbench with waveform simulations</li>
         </ul>
       `,
     },
