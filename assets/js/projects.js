@@ -9,6 +9,39 @@ function loadNavbar() {
 // Projects page
 const projects = [
     {
+      id: "spotifyplaylist",
+      title: "Concert Setlist to Playlist",
+      images: [
+        "assets/images/spotify-playlist-1.png",
+        "assets/images/spotify-playlist-2.png"
+      ],
+      description: `
+        A full-stack web application that lets users search for an artist, browse their concert setlists, preview songs, and generate a Spotify playlist.
+        This project integrates multiple third-party APIs, includes rate limiting and caching, and provides a React UI for selecting and filtering songs before playlist creation.
+      `,
+      components: `
+        <ul>
+          <li>React Native</li>
+          <li>Python</li>
+          <li>Flask</li>
+          <li>setlist.fm REST API</li>
+          <li>Spotify REST API</li>
+        </ul>
+      `,
+      features: `
+        <ul>
+          <li>Artist Search - Search artist susing the setlist.fm API</li>
+          <li>Browse Concert Setlists - View past and upcoming concerts by venue and date</li>
+          <li>Setlist Preview - See full song order, including encores and covers</li>
+          <li>Selective Song Inclusion - Toggle individual songs on/off before playlist creation</li>
+          <li>Spotify Playlist Creation - Create public or private playlists</li>
+        </ul>
+      `,
+      links: [
+        { text: "GitHub", url: "https://github.com/PtrC7/setlist-to-playlist" },
+      ],
+    },
+    {
       id: "chatlingo",
       title: "ChatLingo",
       images: [

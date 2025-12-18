@@ -38,6 +38,15 @@ function loadSkills() {
 // Projects
 const projects = [
   {
+    id: "spotifyplaylist",
+    title: "Setlist to Playlist",
+    image: "assets/images/spotify-playlist-1.png",
+    description: "React Native, Python, Flask, REST API",
+    links: [
+      { text: "GitHub", url: "https://github.com/PtrC7/setlist-to-playlist" },
+    ],
+  },
+  {
     id: "chatlingo",
     title: "ChatLingo",
     image: "assets/images/chatlingo-1.png",
