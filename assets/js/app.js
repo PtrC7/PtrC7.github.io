@@ -92,6 +92,14 @@ const projects = [
     links: [],
   },
   {
+    id: "dspfpga",
+    title: "DSP Using FPGA",
+    image: "assets/images/dsp-1.png",
+    description:
+      "FPGA Board, Verilog, Oscilloscope, MATLAB",
+    links: [],
+  },
+  {
     id: "addersubtractor",
     title: "Adder Subtractor FPGA Circuit",
     image: "assets/images/adder-subtractor-1.png",
