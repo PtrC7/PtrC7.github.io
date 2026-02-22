@@ -183,6 +183,37 @@ const projects = [
       `,
     },
     {
+      id: "dspfpga",
+      title: "DSP Using FPGA",
+      images: [
+        "assets/images/dsp-1.png",
+        "assets/images/dsp-2.png",
+        "assets/images/dsp-3.png",
+        "assets/images/dsp-4.png"
+      ],
+      description: `
+        Implemented and analyzed a Discrete Comb Filter on a FPGA Board
+      `,
+      components: `
+        <ul>
+          <li>FPGA Board</li>
+          <li>Verilog</li>
+          <li>Oscilloscope</li>
+          <li>MATLAB ADS</li>
+          <li>16-bit D flip-flops with clock enabled</li>
+          <li>16-bit Adders</li>
+        </ul>
+      `,
+      features: `
+        <ul>
+          <li>Integrated digital-to-analog and analog-to-digital converter chips and monitored its outputs using an oscilloscope </li>
+          <li>Determined system parameters to verify the comb filter’s transfer function </li>
+          <li>Utilized MATLAB to model and validate the frequency response of the filter</li>
+          <li>Input signal splits into two paths: Directed Path and Delayed Path. These later combine to give filtered output</li>
+        </ul>
+      `,
+    },
+    {
       id: "addersubtractor",
       title: "Adder/Subtractor FPGA Circuit",
       images: [
