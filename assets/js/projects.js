@@ -10,7 +10,7 @@ function loadNavbar() {
 const projects = [
     {
       id: "spotifyplaylist",
-      title: "Concert Setlist to Playlist",
+      title: "Encore.FM",
       images: [
         "assets/images/spotify-playlist-1.png",
         "assets/images/spotify-playlist-2.png"
@@ -38,6 +38,7 @@ const projects = [
         </ul>
       `,
       links: [
+        { text: "Demo", url: "https://encore-fm.onrender.com/"},
         { text: "GitHub", url: "https://github.com/PtrC7/setlist-to-playlist" },
       ],
     },

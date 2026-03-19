@@ -39,10 +39,11 @@ function loadSkills() {
 const projects = [
   {
     id: "spotifyplaylist",
-    title: "Setlist to Playlist",
+    title: "Encore.FM",
     image: "assets/images/spotify-playlist-1.png",
     description: "React Native, Python, Flask, REST API",
     links: [
+      { text: "Demo", url: "https://encore-fm.onrender.com/"},
       { text: "GitHub", url: "https://github.com/PtrC7/setlist-to-playlist" },
     ],
   },
