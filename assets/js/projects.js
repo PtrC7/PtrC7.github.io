@@ -9,9 +9,10 @@ function loadNavbar() {
 // Projects page
 const projects = [
     {
-      id: "spotifyplaylist",
+      id: "encorefm",
       title: "Encore.FM",
       category: 'software',
+      warning: "Playlist creation no longer works due to Spotify API changes.",
       images: [
         "assets/images/spotify-playlist-1.png",
         "assets/images/spotify-playlist-2.png"
@@ -314,6 +315,7 @@ const projects = [
   
         projectContentText.innerHTML = `
           <h2>${project.title}</h2>
+          ${project.warning ? `<p style="color: red; font-weight: bold;">${project.warning}</p>` : ""}
           <p>${project.description}</p>
           <h3>Components</h3>
           ${project.components}

@@ -38,7 +38,7 @@ function loadSkills() {
 // Projects
 const projects = [
   {
-    id: "spotifyplaylist",
+    id: "encorefm",
     title: "Encore.FM",
     category: 'software',
     image: "assets/images/spotify-playlist-1.png",
