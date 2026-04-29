@@ -389,3 +389,7 @@ footer {
     max-width: 100%;
   }
 }
+
+.filter-btn.active {
+  background-color: var(--secondary-color);
+}

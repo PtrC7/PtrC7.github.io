@@ -11,6 +11,7 @@ const projects = [
     {
       id: "spotifyplaylist",
       title: "Encore.FM",
+      category: 'software',
       images: [
         "assets/images/spotify-playlist-1.png",
         "assets/images/spotify-playlist-2.png"
@@ -45,6 +46,7 @@ const projects = [
     {
       id: "chatlingo",
       title: "ChatLingo",
+      category: 'software',
       images: [
         "assets/images/chatlingo-1.png",
         "assets/images/chatlingo-2.png"
@@ -80,6 +82,7 @@ const projects = [
     {
       id: "stockmarket",
       title: "Stock Market Forecasting",
+      category: 'software',
       images: ["assets/images/stock-market-1.png"],
       description: `
         A machine learning project using recurrent neural networks to predict stock market trends. Compared the predictions of two models to see which would be better in this use case.
@@ -102,6 +105,7 @@ const projects = [
     {
       id: "stringmatcher",
       title: "Exact String Matcher",
+      category: 'software',
       images: ["assets/images/string-matcher-1.png"],
       description: `
         Final project for my algorithm class. Used React to create a website implementing different string matching algorithms to see which is more efficient.
@@ -127,6 +131,7 @@ const projects = [
     {
       id: "2fastthumbs",
       title: "2FastThumbs",
+      category: 'software',
       images: ["assets/images/2fastthumbs-1.png"],
       description: `
         Final project for my software design laboratory class. I worked with 2 other classmates to create an Android texting speed test app. Created algorithms to calculate the words per minute
@@ -154,6 +159,7 @@ const projects = [
     {
       id: "shiftregister",
       title: "CMOS Shift Register",
+      category: 'hardware',
       images: [
         "assets/images/shift-register-1.png",
         "assets/images/shift-register-2.png",
@@ -186,6 +192,7 @@ const projects = [
     {
       id: "dspfpga",
       title: "DSP Using FPGA",
+      category: 'hardware',
       images: [
         "assets/images/dsp-1.png",
         "assets/images/dsp-2.png",
@@ -217,6 +224,7 @@ const projects = [
     {
       id: "addersubtractor",
       title: "Adder/Subtractor FPGA Circuit",
+      category: 'hardware',
       images: [
         "assets/images/adder-subtractor-1.png",
         "assets/images/adder-subtractor-2.png",
@@ -249,6 +257,7 @@ const projects = [
     {
       id: "digitalclock",
       title: "Digital Clock",
+      category: 'hardware',
       images: [
         "assets/images/digital-clock-1.gif",
         "assets/images/digital-clock-2.png",

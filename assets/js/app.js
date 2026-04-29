@@ -40,6 +40,7 @@ const projects = [
   {
     id: "spotifyplaylist",
     title: "Encore.FM",
+    category: 'software',
     image: "assets/images/spotify-playlist-1.png",
     description: "React Native, Python, Flask, REST API",
     links: [
@@ -50,6 +51,7 @@ const projects = [
   {
     id: "chatlingo",
     title: "ChatLingo",
+    category: 'software',
     image: "assets/images/chatlingo-1.png",
     description: "React Native, Pytorch, Flask",
     links: [
@@ -59,6 +61,7 @@ const projects = [
   {
     id: "stockmarket",
     title: "Stock Market Forecasting",
+    category: 'software',
     image: "assets/images/stock-market-1.png",
     description: "Pytorch, Recurrent Neural Networks",
     links: [
@@ -68,6 +71,7 @@ const projects = [
   {
     id: "stringmatcher",
     title: "Exact String Matcher",
+    category: 'archived',
     image: "assets/images/string-matcher-1.png",
     description: "React, JavaScript",
     links: [
@@ -78,6 +82,7 @@ const projects = [
   {
     id: "2fastthumbs",
     title: "2FastThumbs",
+    category: 'software',
     image: "assets/images/2fastthumbs-1.png",
     description: "Android, Java, Kotlin",
     links: [
@@ -87,6 +92,7 @@ const projects = [
   {
     id: "shiftregister",
     title: "CMOS Shift Register",
+    category: 'hardware',
     image: "assets/images/shift-register-1.png",
     description:
       "Electric, LTSPICE, IRSIM, Pathwave ADS",
@@ -95,6 +101,7 @@ const projects = [
   {
     id: "dspfpga",
     title: "DSP Using FPGA",
+    category: 'hardware',
     image: "assets/images/dsp-1.png",
     description:
       "FPGA Board, Verilog, Oscilloscope, MATLAB",
@@ -103,6 +110,7 @@ const projects = [
   {
     id: "addersubtractor",
     title: "Adder Subtractor FPGA Circuit",
+    category: 'hardware',
     image: "assets/images/adder-subtractor-1.png",
     description: "Intel API, Quartus, MATLAB",
     links: [],
@@ -110,6 +118,7 @@ const projects = [
   {
     id: "digitalclock",
     title: "Digital Clock",
+    category: 'hardware',
     image: "assets/images/digital-clock-1.gif",
     description: "Integrated Circuits, Logic Gates, Arduino",
     links: [],
@@ -117,18 +126,19 @@ const projects = [
 ];
 
 function loadProjects() {
-
+ 
   const projectsContainer = document.querySelector(".projects-container");
-
+ 
   projects.forEach((project) => {
     const projectCard = document.createElement("div");
     projectCard.classList.add("project-container", "project-card");
-
+    projectCard.dataset.category = project.category;
+ 
     let linksHTML = "";
     project.links.forEach((link) => {
       linksHTML += `<a href="${link.url}" class="btn">${link.text}</a> `;
     });
-
+ 
     projectCard.innerHTML = `
       <a href="projects.html?id=${project.id}">
         <img src="${project.image}" alt="${project.title}" loading="lazy" class="project-pic">
@@ -140,17 +150,45 @@ function loadProjects() {
         ${linksHTML}
       </p>
     `;
-
+ 
     projectsContainer.appendChild(projectCard);
   });
+
+  document.querySelectorAll('.project-container').forEach(card => {
+    if (card.dataset.category == 'archived' || card.dataset.category === 'hidden') {
+      card.style.display = 'none';
+    }
+  });
+ 
+  // Filter button 
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+ 
+      document.querySelectorAll('.project-container').forEach(card => {
+        if (card.dataset.category === 'hidden') {
+          card.style.display = 'none';
+          return;
+        }
+
+        if (filter === 'all') {
+          // "All" shows everything except archived
+          card.style.display = card.dataset.category === 'archived' ? 'none' : '';
+        } else {
+          card.style.display = card.dataset.category === filter ? '' : 'none';
+        }
+      });
+ 
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
 };
-
-
+ 
+ 
 // dynamic loading of navbar and projects
 document.addEventListener("DOMContentLoaded", () => {
   loadNavbar();
   loadSkills();
   loadProjects();
 });
-
-
